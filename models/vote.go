@@ -2,6 +2,7 @@ package models
 
 import "github.com/jinzhu/gorm"
 
+// Vote controll for the votes one time
 type Vote struct {
 	gorm.Model
 	CommentID uint `json:"commentId" gorm:"not null"`

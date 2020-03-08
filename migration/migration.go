@@ -5,6 +5,7 @@ import (
 	"github.com/solrac97gr/comments/models"
 )
 
+// Migrate create the tables on the database
 func Migrate() {
 	db := configuration.GetConnection()
 	defer db.Close()

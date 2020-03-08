@@ -2,6 +2,7 @@ package models
 
 import "github.com/jinzhu/gorm"
 
+// Comment comments of the system
 type Comment struct {
 	gorm.Model
 	UserID   uint   `json:"userId"`
