@@ -12,8 +12,8 @@ import (
 
 // CommentCreate Create a comment in the DB
 func CommentCreate(w http.ResponseWriter, r *http.Request) {
-	comment := models.Comment
-	m := models.Message
+	comment := models.Comment{}
+	m := models.Message{}
 
 	err := json.NewDecoder(r.Body).Decode(&comment)
 	if err != nil {
@@ -37,4 +37,11 @@ func CommentCreate(w http.ResponseWriter, r *http.Request) {
 	m.Code = http.StatusCreated
 	m.Message = "Comment created"
 	commons.DisplayMessage(w, m)
+}
+
+// GetComments Return all comments of the db
+func GetComments(w http.ResponseWriter, r *http.Request) {
+	comments := []models.Comment{}
+	m := models.Message{}
+
 }
