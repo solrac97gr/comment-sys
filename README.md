@@ -14,7 +14,7 @@ Para este proyecto que estoy desarrollando guiandome del curso de go de edteam e
 - Mysql
 
 
-# CONFIG
+# Config
 Complete the config.json as in the example file with the credentials provided by each service.
 
 Completar el config.json como en el archivo de ejemplo con las credenciales que les provee cada servicio.
